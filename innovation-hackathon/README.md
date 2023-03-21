@@ -2,7 +2,7 @@
 
 # 欢迎来到英特尔<sup>&reg;</sup> AI 黑客松! 🚀
 
-参赛者通过参与动手实验环节和每个赛道的专属notebook文件参与活动。下面的文件夹中包含各个赛道所需的基本素材。此外，部分培训视频可以在此观看 <b>[here](https://www.intel.com/content/www/us/en/developer/videos/ai-for-social-good-hackathon.html)</b>。
+参赛者通过参与动手实验环节和每个赛道的专属notebook文件参与活动。下面的文件夹中包含各个赛道所需的基本素材。此外，部分培训视频可以<b>[在此观看](https://www.intel.com/content/www/us/en/developer/videos/ai-for-social-good-hackathon.html)</b>。
 
 ## 目录
 
