@@ -2,10 +2,10 @@
 
 # 欢迎来到英特尔<sup>&reg;</sup> AI 黑客松! 🚀
 
-In the first of the two-part AI hackathon at Intel Innovation 2022, participants began with a hands-on workshop and starter notebook in each track. The folders below contain the materials used in each of the three tracks. You may also watch a video demo of these tutorials <b>[here](https://www.intel.com/content/www/us/en/developer/videos/ai-for-social-good-hackathon.html)</b>.
+参赛者通过参与动手实验环节和每个赛道的专属notebook文件参与活动。下面的文件夹中包含各个赛道所需的基本素材。此外，部分培训视频可以在此观看 <b>[here](https://www.intel.com/content/www/us/en/developer/videos/ai-for-social-good-hackathon.html)</b>。
 
-## Table of Contents
+## 目录
 
-- [Computer Vision (CV) Track](computer-vision-track)
-- [Machine Learning (ML) Track](machine-learning-track)
-- [Natural Language Processing (NLP) Track](natural-language-processing-track)
+- [计算机视觉 (CV) 赛道](computer-vision-track)
+- [机器学习 (ML) 赛道](machine-learning-track)
+- [自然语言处理 (NLP) 赛道](natural-language-processing-track)
