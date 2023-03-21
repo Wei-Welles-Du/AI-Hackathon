@@ -1,10 +1,10 @@
-# Intel<sup>&reg;</sup> AI Hackathon
+# 英特尔<sup>&reg;</sup> AI 黑客松
 
-Welcome to the Intel<sup>&reg;</sup> AI Hackathon repo! This repo contains notebooks and tutorials referenced in Intel AI Hackathons.
+欢迎来到英特尔<sup>&reg;</sup> AI 黑客松代码仓库! 本代码仓库包含英特尔AI黑客松的相关笔记本文件和教程等内容。
 
-## Table of Contents
-- [Intel<sup>&reg;</sup> Innovation 2022 AI Hackathon](innovation-hackathon)
-    - [Computer Vision (CV) Track](innovation-hackathon/computer-vision-track)
-    - [Machine Learning (ML) Track](innovation-hackathon/machine-learning-track)
-    - [Natural Language Processing (NLP) Track](innovation-hackathon/natural-language-processing-track)
-- [Intel<sup>&reg;</sup> AI Startup Olympics - Blueprint Sample Code](ai-startup-olympics)
+## 目录
+- [英特尔<sup>&reg;</sup> AI 黑客松](innovation-hackathon)
+    - [计算机视觉 (CV) 赛道](innovation-hackathon/computer-vision-track)
+    - [机器学习 (ML) 赛道](innovation-hackathon/machine-learning-track)
+    - [自然语言处理 (NLP) 赛道](innovation-hackathon/natural-language-processing-track)
+- [英特尔<sup>&reg;</sup> AI 初创企业 奥运赛 - 蓝图及样例代码](ai-startup-olympics)
