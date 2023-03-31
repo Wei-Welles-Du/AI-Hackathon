@@ -1,5 +1,5 @@
 
-<center><img src="nb_imgs/CV_ON22.png" style="width:auto;border-radius:15px"/></center>
+[comment]:  <center><img src="nb_imgs/CV_ON22.png" style="width:auto;border-radius:15px"/></center>
 
 # Welcome to the Computer Vision Track! 🚀
 
