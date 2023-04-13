@@ -13,7 +13,8 @@ To build a conda env for this project, please reference the conda env file cv_ha
 
 ### 数据集 | Dataset
 
-本示例中的数据集请参见：https://www.mvtec.com/company/research/datasets/mvtec-ad
+本示例中的数据集请参见：https://www.mvtec.com/company/research/datasets/mvtec-ad (仅需下载 Pill (262 MB) 即可)  
+下载完数据集后，请参考视觉质量检测 AI 参考套件 [准备数据](https://github.com/oneapi-src/visual-quality-inspection#2-data-preparation) (不需要执行 Data Cloning)
 
 The dataset in this example can be found at https://www.mvtec.com/company/research/datasets/mvtec-ad
 
