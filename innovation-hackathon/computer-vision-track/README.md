@@ -22,6 +22,6 @@ Once complete the download, please refer to the Visual Quality Inspection Refere
 
 ## 第二部分 黑客马拉松 | Part II: Hackathon
 
-黑客马拉松期间使用的数据集请参见：https://www.kaggle.com/datasets/ravirajsinh45/crop-and-weed-detection-data-with-bounding-boxes 。 您可以对药片教程 notebook 进行适当调整，以使用此数据集。
+黑客马拉松期间使用的数据集请参见：https://www.kaggle.com/datasets/ravirajsinh45/crop-and-weed-detection-data-with-bounding-boxes 。 您可以在基于药片这个项目教程的 notebook 基础之上进行适当调整，以使用此数据集。
 
 The dataset used during the hackathon can be found at https://www.kaggle.com/datasets/ravirajsinh45/crop-and-weed-detection-data-with-bounding-boxes . You can adapt the pill tutorial notebook to this dataset. 
