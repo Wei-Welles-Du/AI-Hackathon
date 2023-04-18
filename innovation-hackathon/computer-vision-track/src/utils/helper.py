@@ -117,50 +117,51 @@ def evaluate(model, dataloader, device, class_names="auto", labels=True):
     model.to(device)
     model.eval()
     
-    if labels:
-        y_true = np.empty(shape=(0,))
-        y_pred = np.empty(shape=(0,))
-    
-        for inputs, labels in dataloader:
-            inputs = inputs.to(device)
-            labels = labels.to(device)
-            start_time = time.time()
-            preds_probs = model(inputs)[0]
-            infer_time = time.time()-start_time
-            print('infer_time_per_sample=', infer_time)
-            preds_class = torch.argmax(preds_probs, dim=-1)
-            labels = labels.to("cpu").numpy()
-            preds_class = preds_class.detach().to("cpu").numpy()
-            y_true = np.concatenate((y_true, labels))
-            y_pred = np.concatenate((y_pred, preds_class))
-    
-        accuracy = f1_score(y_true, y_pred)
-        balanced_accuracy = balanced_accuracy_score(y_true, y_pred)
-    
-        print("f1 Accuracy Score: ", accuracy)
-        print("Balanced Accuracy: ", balanced_accuracy)
-    
-        plot_confusion_matrix(y_true, y_pred, class_names=class_names)
-        return y_true, y_pred
-    else:
-        
-        model.to(device)
-        model.eval()
-        
-        y_pred = np.empty(shape=(0,))
-        file_list = []
-    
-        for inputs, fn in dataloader:
-            inputs = inputs.to(device)
-            preds_probs = model(inputs)[0]
-            preds_class = torch.argmax(preds_probs, dim=-1)
-            preds_class = preds_class.detach().to("cpu").numpy()
-            y_pred = np.concatenate((y_pred, preds_class))
-            file_list.append(list(fn))
-        
-        files = [item for sublist in file_list for item in sublist]
-    
-        return y_pred, files
+    with torch.no_grad():
+        if labels:
+            y_true = np.empty(shape=(0,))
+            y_pred = np.empty(shape=(0,))
+
+            for inputs, labels in dataloader:
+                inputs = inputs.to(device)
+                labels = labels.to(device)
+                start_time = time.time()
+                preds_probs = model(inputs)[0]
+                infer_time = time.time()-start_time
+                print('infer_time_per_sample=', infer_time)
+                preds_class = torch.argmax(preds_probs, dim=-1)
+                labels = labels.to("cpu").numpy()
+                preds_class = preds_class.detach().to("cpu").numpy()
+                y_true = np.concatenate((y_true, labels))
+                y_pred = np.concatenate((y_pred, preds_class))
+
+            accuracy = f1_score(y_true, y_pred)
+            balanced_accuracy = balanced_accuracy_score(y_true, y_pred)
+
+            print("f1 Accuracy Score: ", accuracy)
+            print("Balanced Accuracy: ", balanced_accuracy)
+
+            plot_confusion_matrix(y_true, y_pred, class_names=class_names)
+            return y_true, y_pred
+        else:
+
+            model.to(device)
+            model.eval()
+
+            y_pred = np.empty(shape=(0,))
+            file_list = []
+
+            for inputs, fn in dataloader:
+                inputs = inputs.to(device)
+                preds_probs = model(inputs)[0]
+                preds_class = torch.argmax(preds_probs, dim=-1)
+                preds_class = preds_class.detach().to("cpu").numpy()
+                y_pred = np.concatenate((y_pred, preds_class))
+                file_list.append(list(fn))
+
+            files = [item for sublist in file_list for item in sublist]
+
+            return y_pred, files
         
 
 
