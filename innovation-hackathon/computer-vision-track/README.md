@@ -8,11 +8,11 @@ In this notebook, we'll introduce the <b>[Visual Quality Inspection AI Reference
 ## 第一部分： 入门 | Part I: Getting Started
 
 如需为此项目构建一个 conda 环境，请参考 conda 环境文件 cv_hack.yaml
+
+To build a conda env for this project, please reference the conda env file cv_hack.yaml
 ```
 conda env create --file cv_hack.yaml
 ```
-
-To build a conda env for this project, please reference the conda env file cv_hack.yaml
 
 ### 数据集 | Dataset
 
