@@ -12,6 +12,8 @@ In this notebook, we'll introduce the <b>[Visual Quality Inspection AI Reference
 To build a conda env for this project, please reference the conda env file cv_hack.yaml
 ```
 conda env create --file cv_hack.yaml
+conda activate cv_hack
+python -m ipykernel install --name cv_hack --user
 ```
 
 ### 数据集 | Dataset
