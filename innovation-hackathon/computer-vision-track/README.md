@@ -20,7 +20,7 @@ conda env create --file cv_hack.yaml
 下载完数据集后，请参考视觉质量检测 AI 参考套件 [准备数据](https://github.com/oneapi-src/visual-quality-inspection#2-data-preparation) (执行 Data Cloning可提高模型精度)
 
 The dataset in this example can be found at https://www.mvtec.com/company/research/datasets/mvtec-ad, you only need to download the file Pill (262 MB in size).
-Once complete the download, please refer to the Visual Quality Inspection Reference Kit [data preparation](https://github.com/oneapi-src/visual-quality-inspection#2-data-preparation) section for details. (You do not need to do Data Cloning) 
+Once complete the download, please refer to the Visual Quality Inspection Reference Kit [data preparation](https://github.com/oneapi-src/visual-quality-inspection#2-data-preparation) section for details. (Data Cloning can be executed to improve model accuracy) 
 
 
 ## 第二部分 黑客马拉松 | Part II: Hackathon
